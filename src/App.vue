@@ -1,12 +1,14 @@
 <template>
   <v-app>
     <v-app-bar app color="deep-black accent-4" dark>
-      <!-- <v-icon class="mr-5">mdi-alien-outline</v-icon> -->
-      <img src="https://cdn.shopify.com/s/files/1/0090/2692/8718/files/StoreLogo_180x.png?v=1605261280" class="logo mr-5">
+      <img
+        src="https://cdn.shopify.com/s/files/1/0090/2692/8718/files/StoreLogo_180x.png?v=1605261280"
+        class="logo mr-5"
+      />
       <v-toolbar-title>JOM Streetwear</v-toolbar-title>
 
       <v-spacer></v-spacer>
-
+      <v-switch v-model="$vuetify.theme.dark"></v-switch>
       <v-menu>
         <template v-slot:activator="{ on }">
           <v-btn icon v-on="on">
@@ -16,14 +18,19 @@
 
         <v-list>
           <v-list-item>
-            <v-list-item-title> <center><v-icon>mdi-account</v-icon>Profile</center></v-list-item-title>
+            <v-list-item-title>
+              <center>
+                <v-icon>mdi-account</v-icon>Profile
+              </center></v-list-item-title
+            >
           </v-list-item>
           <v-divider></v-divider>
           <v-list-item @click="signout">
             <v-list-item-title class="red--text">ออกจากระบบ</v-list-item-title>
           </v-list-item>
-           <v-divider></v-divider>
-            <router-link to='/Register' > Register </router-link>
+          <router-link to="/Register" class="p-2 text-dark">
+            Register
+          </router-link>
         </v-list>
       </v-menu>
     </v-app-bar>
@@ -42,7 +49,7 @@ export default {
   name: "App",
 
   mounted() {
-    firebase.auth().onAuthStateChanged(user => {
+    firebase.auth().onAuthStateChanged((user) => {
       if (user == null) this.$router.replace("/signin");
       else this.$router.replace("/");
     });
@@ -51,8 +58,8 @@ export default {
   methods: {
     signout() {
       firebase.auth().signOut();
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -60,7 +67,7 @@ export default {
 .v-application {
   font-family: "Kanit";
 }
-.logo{
+.logo {
   width: 40px;
 }
 </style>
