@@ -1,11 +1,11 @@
 export default {
   firebaseConfig : {
-    apiKey: "AIzaSyCPxXxG0KMK0sg0tw85qoHjStZRrZyMrfA",
-    authDomain: "ochido-shop-352.firebaseapp.com",
-    projectId: "ochido-shop-352",
-    storageBucket: "ochido-shop-352.appspot.com",
-    messagingSenderId: "1076802900221",
-    appId: "1:1076802900221:web:a11956e2ba5f764da8ee94",
-    measurementId: "G-RPHQVGYPVJ"
+    apiKey: "AIzaSyB42OBulcCnyFM2NERpdAR1khfrxZMvARg",
+  authDomain: "jom-1bbbe.firebaseapp.com",
+  projectId: "jom-1bbbe",
+  storageBucket: "jom-1bbbe.appspot.com",
+  messagingSenderId: "904905726188",
+  appId: "1:904905726188:web:6f9235fd25a087a27c6dc9",
+  measurementId: "G-E4F5FPRL90"
   }
 };
