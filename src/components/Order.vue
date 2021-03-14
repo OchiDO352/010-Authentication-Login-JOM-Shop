@@ -33,9 +33,9 @@
       <v-divider></v-divider>
 
       <v-card-actions>
-          <v-btn x-large color="pink" dark @click="addOrder">เพิ่มลงตระกร้า</v-btn>
+          <v-btn x-large color="orange darken-4" dark @click="addOrder">เพิ่มลงตระกร้า</v-btn>
           <v-spacer></v-spacer>
-          <v-btn x-large @click="$router.go(-1)">ยกเลิก</v-btn>
+          <v-btn x-large @click="$router.go(-1)" dark>ยกเลิก</v-btn>
       </v-card-actions>
     </v-card>
   </v-container>
@@ -72,7 +72,8 @@ export default {
           });
 
           this.$router.go(-1);
-      }
+      },
+      
   }
 };
 </script>
