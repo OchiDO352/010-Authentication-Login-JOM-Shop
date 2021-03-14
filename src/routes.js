@@ -6,6 +6,8 @@ import Order from "./components/Order.vue";
 import Checkout from "./components/Checkout.vue";
 import CheckoutProcess from "./components/CheckoutProcess.vue";
 import Signin from "./components/Signin.vue";
+import Register from "./components/Register.vue";
+import Apply from "./components/Apply.vue";
 
 const routes = [
     {
@@ -27,7 +29,15 @@ const routes = [
     {
         path: "/signin",
         component: Signin
-    }
+    },
+    {
+        path: "/Register",
+        component: Register
+    },
+    {
+        path: "/Apply",
+        component: Apply
+    },
 ];
 
 const router = new VueRouter(

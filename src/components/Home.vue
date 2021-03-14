@@ -1,16 +1,16 @@
 <template>
   <v-container>
     <v-btn v-if="haveOrders" large block color="orange darken-4" dark to="/checkout">
-      มีสินค้า {{ numberOfOrders }} รายการรอการชำระเงิน
+      <v-icon>mdi-cart</v-icon>{{ numberOfOrders }} 
     </v-btn>
 
     <v-row>
       <v-col cols="12">
         <v-card elevation="24">
-          <v-carousel cycle show-arrows hide-delimiters height="300">
+          <v-carousel cycle show-arrows hide-delimiters height="500">
             <v-carousel-item v-for="(item, index) in specials" :key="index">
               <v-img
-                height="300"
+                height="500"
                 :src="item.image"
                 class="align-end"
                 gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
@@ -28,7 +28,7 @@
 
         <v-card :to="'/order/'+index">
           <v-img
-            height="200"
+            height="320"
             :src="item.image"
             class="align-end"
             gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"                        
@@ -41,7 +41,7 @@
           <v-card-actions>
               <v-spacer></v-spacer>
               
-              <v-icon v-if="item.love" class="mr-5" color="pink">mdi-heart</v-icon>
+              <v-icon v-if="item.love" class="mr-5" color="orange darken-4">mdi-heart</v-icon>
               <v-icon v-else class="mr-5">mdi-heart-outline</v-icon>
 
               <v-icon>mdi-share-variant</v-icon>
@@ -69,5 +69,6 @@ export default {
       return this.$store.getters.numberOfOrders;
     }
   }
+  
 };
 </script>

@@ -46,6 +46,7 @@
             :rules="[v=>!!v||'โปรดกรอกเบอร์โทรศัพท์']"
             v-model="telephone"
             label="เบอร์โทรศัพท์"
+            type ="number"
             filled
           ></v-text-field>
         </v-card-text>
@@ -118,3 +119,6 @@ export default {
   }
 };
 </script>
+<style>
+
+</style>

@@ -9,11 +9,11 @@ const state = {
         },
         {
             image: "/img/test2.jpg",
-            text: ""
+            text: "โปรโมชั่นต่างๆมากมาย"
         },
         {
             image: "/img/test3.jpg",
-            text: ""
+            text: "สั่งวันนี้จัดส่งฟรี"
         }
     ],
     menus: [
@@ -21,73 +21,73 @@ const state = {
             image: "/img/1.jpg",
             text: "#1 Hoodie ",
             price: 299,
-            love: false
+            love: true
         },
         {
             image: "/img/2.png",
             text: "#2 Hoodie",
             price: 299,
-            love: false
+            love: true
         },
         {
             image: "/img/3.png",
             text: "#3 Hoodie",
             price: 299,
-            love: false
+            love: true
         },
         {
             image: "/img/4.jpg",
             text: "#1 T-Shirt",
             price: 150,
-            love: false
+            love: true
         },
         {
             image: "/img/5.jpg",
             text: "#2 T-Shirt",
             price: 150,
-            love: false
+            love: true
         },
         {
             image: "/img/6.jpg",
             text: "#1 Face Mask",
             price: 40,
-            love: false
+            love: true
         },
         {
             image: "/img/7.jpg",
             text: "#2 Face Mask",
             price: 40,
-            love: false
+            love: true
         },
         {
             image: "/img/9.jpg",
             text: "#3 Face Mask",
             price: 40,
-            love: false
+            love: true
         },
         {
             image: "/img/10.webp",
             text: "#1 Mug",
             price: 60,
-            love: false
+            love: true
         },
         {
             image: "/img/11.png",
             text: "#2  Mug",
             price: 60,
-            love: false
+            love: true
         },
         {
             image: "/img/12.png",
             text: "#3  Mug",
             price: 60,
-            love: false
+            love: true
         },
         {
             image: "/img/poster.webp",
             text: "Poster",
             price: 100,
-            love: false
+            love: true
         }
     ],
     orders : [],

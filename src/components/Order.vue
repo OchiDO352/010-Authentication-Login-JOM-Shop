@@ -1,14 +1,17 @@
 <template>
   <v-container>
     <v-card>
+      <center>
       <v-img
         height="300"
+        width="300"
         :src="menu.image"
         class="white--text align-end"
         gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
       >
         <v-card-title>{{ menu.text }} {{ menu.price }} บาท</v-card-title>
       </v-img>
+      </center>
 
       <v-card-actions>
         <v-btn icon x-large @click="decQuantity">
@@ -73,10 +76,11 @@ export default {
 
           this.$router.go(-1);
       },
-      
   }
+  
 };
 </script>
 <style>
+
 
 </style>

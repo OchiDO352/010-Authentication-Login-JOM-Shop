@@ -1,5 +1,6 @@
 <template>
   <v-container>
+    
     <div v-if="loading" class="text-center">
       <v-progress-circular
         size="50"
@@ -28,11 +29,12 @@
           <v-list-item-title>เข้าสู่ระบบด้วย Facebook</v-list-item-title>
         </v-list-item>
 
-
-    
+        <center><img src="https://media.giphy.com/media/j1mSV7lTv4IIT3Q7q8/giphy.gif" class="h"></center>
       </v-list>
     </v-card>
   </v-container>
+  
+  
 </template>
 
 <script>
@@ -71,3 +73,9 @@ export default {
   },
 };
 </script>
+
+<style>
+.h{
+  width: 35rem;
+}
+</style>

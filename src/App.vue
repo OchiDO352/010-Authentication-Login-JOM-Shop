@@ -3,9 +3,12 @@
     <v-app-bar app color="deep-black accent-4" dark>
       <img
         src="https://cdn.shopify.com/s/files/1/0090/2692/8718/files/StoreLogo_180x.png?v=1605261280"
-        class="logo mr-5"
+        class="logo mr-5 a"
+        @click="product"
       />
-      <v-toolbar-title>JOM Streetwear</v-toolbar-title>
+      <v-toolbar-title @click="product" class="a"
+        >JOM Streetwear</v-toolbar-title
+      >
 
       <v-spacer></v-spacer>
       <v-switch v-model="$vuetify.theme.dark"></v-switch>
@@ -20,17 +23,23 @@
           <v-list-item>
             <v-list-item-title>
               <center>
-                <v-icon>mdi-account</v-icon>Profile
-              </center></v-list-item-title
-            >
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0090/2692/8718/files/StoreLogo_180x.png?v=1605261280"
+                  class="logo"
+                /></center
+            ></v-list-item-title>
           </v-list-item>
           <v-divider></v-divider>
+
+          <v-list-item @click="register">
+            <v-list-item-title class="black--text"
+              >สมัครสมาชิก</v-list-item-title
+            >
+          </v-list-item>
+
           <v-list-item @click="signout">
             <v-list-item-title class="red--text">ออกจากระบบ</v-list-item-title>
           </v-list-item>
-          <router-link to="/Register" class="p-2 text-dark">
-            Register
-          </router-link>
         </v-list>
       </v-menu>
     </v-app-bar>
@@ -38,6 +47,14 @@
     <v-content>
       <router-view></router-view>
     </v-content>
+    <v-footer dark padless>
+      <v-card class="flex" flat tile>
+        <v-card-text class="py-2 white--text text-center">
+          {{ new Date().getFullYear() }} —
+          <strong>Copyright © 2021, JOM Streetwear.</strong>
+        </v-card-text>
+      </v-card>
+    </v-footer>
   </v-app>
 </template>
 
@@ -59,6 +76,15 @@ export default {
     signout() {
       firebase.auth().signOut();
     },
+    register() {
+      this.$router.replace("/Register");
+    },
+    product() {
+      this.$router.replace("/");
+    },
+    cart() {
+      this.$router.replace("/Checkout");
+    },
   },
 };
 </script>
@@ -69,5 +95,8 @@ export default {
 }
 .logo {
   width: 40px;
+}
+.a {
+  cursor: pointer;
 }
 </style>
