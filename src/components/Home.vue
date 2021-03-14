@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <v-btn v-if="haveOrders" large block color="pink" dark to="/checkout">
+    <v-btn v-if="haveOrders" large block color="orange darken-4" dark to="/checkout">
       มีสินค้า {{ numberOfOrders }} รายการรอการชำระเงิน
     </v-btn>
 
