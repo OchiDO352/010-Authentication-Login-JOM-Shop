@@ -66,9 +66,9 @@
       <v-divider></v-divider>
 
       <v-card-actions>
-        <v-btn x-large color="pink" class="white--text" :disabled="valid==false" @click="submitOrder">ชำระเงิน</v-btn>
+        <v-btn x-large color="orange darken-4" class="white--text" :disabled="valid==false" @click="submitOrder">ชำระเงิน</v-btn>
         <v-spacer></v-spacer>
-        <v-btn x-large to="/">กลับไปหน้าหลัก</v-btn>
+        <v-btn x-large to="/" dark>กลับไปหน้าหลัก</v-btn>
       </v-card-actions>
     </v-card>
   </v-container>
