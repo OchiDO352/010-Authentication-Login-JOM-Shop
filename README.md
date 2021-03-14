@@ -1,4 +1,4 @@
-# JOM
+# kafare-up
 
 ## Project setup
 ```
