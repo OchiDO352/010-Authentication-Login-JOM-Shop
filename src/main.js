@@ -9,6 +9,7 @@ import settings from "./settings.js";
 
 firebase.initializeApp(settings.firebaseConfig);
 
+
 Vue.config.productionTip = false
 
 new Vue({

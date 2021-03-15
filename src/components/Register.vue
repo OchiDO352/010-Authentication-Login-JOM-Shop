@@ -3,11 +3,16 @@
     <center>
       <h1>สมัครสมาชิก</h1>
       <br />
-      <img
-        src="https://media.giphy.com/media/W5qrFNL7gfYovO6sxo/giphy.gif"
-        alt=""
-      />
+      <v-list-item>
+        <v-img
+          ><img
+            src="https://media.giphy.com/media/W5qrFNL7gfYovO6sxo/giphy.gif"
+            alt=""
+            width="350px"
+        /></v-img>
+      </v-list-item>
     </center>
+
     <div>
       <v-text-field
         :rules="[(v) => !!v || '']"
@@ -28,7 +33,7 @@
         type="number"
         filled
       ></v-text-field>
-          <v-text-field
+      <v-text-field
         :rules="[(v) => !!v || '']"
         v-model="Address"
         label="Address"
@@ -36,7 +41,11 @@
       ></v-text-field>
     </div>
     <v-card-actions>
-      <v-btn x-large color="orange darken-4 white--text" @click="submitApply" :disabled="valid==true"
+      <v-btn
+        x-large
+        color="orange darken-4 white--text"
+        @click="submitApply"
+        :disabled="valid == true"
         >สมัคร</v-btn
       >
       <v-spacer></v-spacer>
@@ -46,26 +55,25 @@
 
 <script>
 export default {
-   data() {
+  data() {
     return {
       valid: false,
       Name: null,
       Email: null,
       Phone: null,
-      Address: null
+      Address: null,
     };
   },
   methods: {
     submitApply() {
-       this.$store.commit("SUBMIT_ORDER", {
+      this.$store.commit("SUBMIT_ORDER", {
         Name: this.Name,
         Email: this.Email,
         Phone: this.Phone,
         Address: this.Address,
       });
-      
+
       this.$router.replace("/Apply");
-      
     },
   },
 };

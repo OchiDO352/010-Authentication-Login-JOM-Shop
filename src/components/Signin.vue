@@ -28,11 +28,20 @@
           </v-list-item-avatar>
           <v-list-item-title>เข้าสู่ระบบด้วย Facebook</v-list-item-title>
         </v-list-item>
-
-        <center><img src="https://media.giphy.com/media/j1mSV7lTv4IIT3Q7q8/giphy.gif" class="h"></center>
+          <center>
+            <v-list-item>
+              <v-img
+                ><img
+                  src="https://media.giphy.com/media/j1mSV7lTv4IIT3Q7q8/giphy.gif"
+                  alt=""
+                  width="350px"
+              /></v-img>
+            </v-list-item>
+            </center>
       </v-list>
     </v-card>
   </v-container>
+  
   
   
 </template>

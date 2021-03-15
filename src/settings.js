@@ -8,4 +8,7 @@ export default {
   appId: "1:904905726188:web:6f9235fd25a087a27c6dc9",
   measurementId: "G-E4F5FPRL90"
   }
+  
 };
+
+
