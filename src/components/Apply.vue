@@ -7,7 +7,7 @@
             </v-card-text>
 
             <v-card-actions class="d-flex justify-center">
-                <v-btn x-large to="/" dark>กลับไปหน้าหลัก</v-btn>
+                <v-btn x-large to="/signin" dark>กลับไปหน้าหลัก</v-btn>
             </v-card-actions>
         </v-card>
     </v-container>

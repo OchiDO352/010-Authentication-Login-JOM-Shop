@@ -1,4 +1,5 @@
-# JOM-Shop
+# kafare-up
+
 ## Project setup
 ```
 npm install

@@ -4,9 +4,8 @@
       <img
         src="https://cdn.shopify.com/s/files/1/0090/2692/8718/files/StoreLogo_180x.png?v=1605261280"
         class="logo mr-5 a"
-        @click="product"
       />
-      <v-toolbar-title @click="product" class="a"
+      <v-toolbar-title
         >JOM Streetwear</v-toolbar-title
       >
 
@@ -34,6 +33,12 @@
           <v-list-item @click="register">
             <v-list-item-title class="black--text"
               >สมัครสมาชิก</v-list-item-title
+            >
+          </v-list-item>
+
+          <v-list-item @click="login">
+            <v-list-item-title class="black--text"
+              >Login</v-list-item-title
             >
           </v-list-item>
 
@@ -79,11 +84,8 @@ export default {
     register() {
       this.$router.replace("/Register");
     },
-    product() {
-      this.$router.replace("/");
-    },
-    cart() {
-      this.$router.replace("/Checkout");
+    login() {
+      this.$router.replace("/Signin");
     },
   },
 };

@@ -40,7 +40,6 @@
         >สมัคร</v-btn
       >
       <v-spacer></v-spacer>
-      <v-btn x-large to="/">กลับไปหน้าหลัก</v-btn>
     </v-card-actions>
   </div>
 </template>
