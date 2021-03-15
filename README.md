@@ -1,4 +1,4 @@
-# JOM Shop
+# JOM Shop 352
 
 ## Project setup
 ```
